@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "larning_icp_backend": {
+      "main": "src/larning_icp_backend/main.mo",
+      "type": "motoko"
+    },
+    "larning_icp_frontend": {
+      "dependencies": [
+        "larning_icp_backend"
+      ],
+      "source": [
+        "src/larning_icp_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "larning_icp_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
